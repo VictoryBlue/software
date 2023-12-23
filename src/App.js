@@ -16,6 +16,23 @@ import gallery9 from './img/gallery/gallery-9.jpg'
 import gallery10 from './img/gallery/gallery-10.jpg'
 import gallery11 from './img/gallery/gallery-11.jpg'
 import gallery12 from './img/gallery/gallery-12.jpg'
+import dave from './img/customers/dave.jpg'
+import ben from './img/customers/ben.jpg'
+import steve from './img/customers/steve.jpg'
+import hannah from './img/customers/hannah.jpg'
+import omnifoodLogo from './img/omnifood-logo.png'
+import techcrunch from './img/logos/techcrunch.png'
+import businessInsider from './img/logos/business-insider.png'
+import nyT from './img/logos/the-new-york-times.png'
+import forbes from './img/logos/forbes.png'
+import usaToday from './img/logos/usa-today.png'
+import heroMin from './img/hero-min.png'
+import hero from './img/hero.webp'
+import screen1 from './img/app/app-screen-1.png'
+import screen2 from './img/app/app-screen-2.png'
+import screen3 from './img/app/app-screen-3.png'
+import meal1 from './img/meals/meal-1.jpg'
+import meal2 from './img/meals/meal-2.jpg'
 import './css/general.css'
 import './css/queries.css'
 import './css/style.css'
@@ -72,7 +89,7 @@ function App() {
               <img
                 class="logo"
                 alt="智能饮食助手 logo"
-                src="img/omnifood-logo.png"
+                src={omnifoodLogo}
               />
             </a>
 
@@ -156,17 +173,17 @@ function App() {
                       />
                     </div>
                     <p class="delivered-text">
-                      <span>250,000+</span> 去年已经交付餐饮
+                      {/* <span>250,000+</span> */}
                     </p>
                   </div>
                 </div>
                 <div class="hero-img-box">
                   <picture>
-                    <source srcset="img/hero.webp" type="image/webp" />
-                    <source srcset="img/hero-min.png" type="image/png" />
+                    <source srcset={hero} type="image/webp" />
+                    <source srcset={heroMin} type="image/png" />
 
                     <img
-                      src="img/hero-min.png"
+                      src={heroMin}
                       class="hero-img"
                       alt="Woman enjoying food, meals in storage container, and food bowls on a table"
                     />
@@ -179,17 +196,25 @@ function App() {
               <div class="container">
                 <h2 class="heading-featured-in">As featured in</h2>
                 <div class="logos">
-                  <img src="img/logos/techcrunch.png" alt="Techcrunch logo" />
+                  <img 
+                    src={techcrunch}
+                    alt="Techcrunch logo" />
                   <img
-                    src="img/logos/business-insider.png"
+                    src={businessInsider}
                     alt="Business Insider logo"
                   />
                   <img
-                    src="img/logos/the-new-york-times.png"
+                    src={nyT}
                     alt="The New York Times logo"
                   />
-                  <img src="img/logos/forbes.png" alt="Forbes logo" />
-                  <img src="img/logos/usa-today.png" alt="USA Today logo" />
+                  <img 
+                    src={forbes}
+                    alt="Forbes logo"
+                  />
+                  <img 
+                    src={usaToday}
+                    alt="USA Today logo"
+                  />
                 </div>
               </div>
             </section>
@@ -212,7 +237,7 @@ function App() {
 
                 <div class="step-img-box">
                   <img
-                    src="img/app/app-screen-1.png"
+                    src={screen1}
                     class="step-img"
                     alt="iPhone app
             preferences selection screen"
@@ -221,7 +246,7 @@ function App() {
 
                 <div class="step-img-box">
                   <img
-                    src="img/app/app-screen-2.png"
+                    src={screen2}
                     class="step-img"
                     alt="iPhone app
             meal approving plan screen"
@@ -229,7 +254,7 @@ function App() {
                 </div>
                 <div class="step-text-box">
                   <p class="step-number">02</p>
-                  <h3 class="heading-tertiary">批准您的每周餐饮计划</h3>
+                  <h3 class="heading-tertiary">对您的食谱进行营养分析</h3>
                   <p class="step-description">
                     每周一次，由我们为您生成的餐食计划。您也可以向AI询问营养指南更改食材，甚至添加您自己的食谱。"
                   </p>
@@ -237,14 +262,14 @@ function App() {
 
                 <div class="step-text-box">
                   <p class="step-number">03</p>
-                  <h3 class="heading-tertiary">我们在任意时间交付食品</h3>
+                  <h3 class="heading-tertiary">强大的饮食追踪</h3>
                   <p class="step-description">
-                    城里最好的厨师将每天为您烹饪您选择的餐食，我们将在您最方便的时间将其送到您的门口。您可以每天更改送货时间表和地址！
+                  我们不仅仅会记录你的每一餐，更会自动为你呈现总热量和各种丰富的营养成分。蛋白质、碳水化合物、脂肪、维生素、矿物质，一应俱全。这不仅是记录，更是关于你身体每一寸的活力！
                   </p>
                 </div>
                 <div class="step-img-box">
                   <img
-                    src="img/app/app-screen-3.png"
+                    src={screen3}
                     class="step-img"
                     alt="iPhone app
             delivery screen"
@@ -262,7 +287,7 @@ function App() {
               <div class="container grid grid--3-cols margin-bottom-md">
                 <div class="meal">
                   <img
-                    src="img/meals/meal-1.jpg"
+                    src={meal1}
                     class="meal-img"
                     alt="Japanese Gyozas"
                   />
@@ -305,14 +330,14 @@ function App() {
 
                 <div class="meal">
                   <img
-                    src="img/meals/meal-2.jpg"
+                    src={meal2}
                     class="meal-img"
                     alt="Avocado Salad"
                   />
                   <div class="meal-content">
                     <div class="meal-tags">
                       <span class="tag tag--vegan">严格素食主义者</span>
-                      <span class="tag tag--paleo">Paleo</span>
+                      <span class="tag tag--paleo">古食派</span>
                     </div>
                     <p class="meal-title">Avocado 沙拉</p>
                     <ul class="meal-attributes">
@@ -419,7 +444,7 @@ function App() {
 
               <div class="container all-recipes">
                 <a href="#" class="link">
-                  查看所有菜谱 &rarr;
+                  尝试菜谱推荐 &rarr;
                 </a>
               </div>
             </section>
@@ -434,7 +459,7 @@ function App() {
                     <img
                       class="testimonial-img"
                       alt="顾客 Dave Bryson 的照片"
-                      src="img/customers/dave.jpg"
+                      src={dave}
                     />
                     <blockquote class="testimonial-text">
                       实惠、健康又美味的餐点，甚至无需手动下单！简直就像魔法一般。
@@ -446,7 +471,7 @@ function App() {
                     <img
                       class="testimonial-img"
                       alt="顾客 Ben Hadley 的照片"
-                      src="img/customers/ben.jpg"
+                      src={ben}
                     />
                     <blockquote class="testimonial-text">
                       这个人工智能算法太厉害了，每次都为我选择合适的餐点。不再为食物而担心真是太神奇了！
@@ -458,7 +483,7 @@ function App() {
                     <img
                       class="testimonial-img"
                       alt="顾客 Steve Miller 的照片"
-                      src="img/customers/steve.jpg"
+                      src={steve}
                     />
                     <blockquote class="testimonial-text">
                       智能饮食助手
@@ -471,7 +496,7 @@ function App() {
                     <img
                       class="testimonial-img"
                       alt="顾客 Hannah Smith 的照片"
-                      src="img/customers/hannah.jpg"
+                      src={hannah}
                     />
                     <blockquote class="testimonial-text">
                       我为整个家庭选择了
@@ -486,85 +511,73 @@ function App() {
                 <figure class="gallery-item">
                   <img
                     src={gallery1}
-                    alt="Photo of beautifully
-            arranged food"
+                    alt="Photo of beautifully arranged food"
                   />
                 </figure>
                 <figure class="gallery-item">
                   <img
                     src={gallery2}
-                    alt="Photo of beautifully
-            arranged food"
+                    alt="Photo of beautifully arranged food"
                   />
                 </figure>
                 <figure class="gallery-item">
                   <img
                     src={gallery3}
-                    alt="Photo of beautifully
-            arranged food"
+                    alt="Photo of beautifully arranged food"
                   />
                 </figure>
                 <figure class="gallery-item">
                   <img
                     src={gallery4}
-                    alt="Photo of beautifully
-            arranged food"
+                    alt="Photo of beautifully arranged food"
                   />
                 </figure>
                 <figure class="gallery-item">
                   <img
                     src={gallery5}
-                    alt="Photo of beautifully
-            arranged food"
+                    alt="Photo of beautifully arranged food"
                   />
                 </figure>
                 <figure class="gallery-item">
                   <img
                     src={gallery6}
-                    alt="Photo of beautifully
-            arranged food"
+                    alt="Photo of beautifully arranged food"
                   />
                 </figure>
                 <figure class="gallery-item">
                   <img
                     src={gallery7}
-                    alt="Photo of beautifully
-            arranged food"
+                    alt="Photo of beautifully arranged food"
                   />
                 </figure>
                 <figure class="gallery-item">
                   <img
                     src={gallery8}
-                    alt="Photo of beautifully
-            arranged food"
+                    alt="Photo of beautifully arranged food"
                   />
                 </figure>
                 <figure class="gallery-item">
                   <img
                     src={gallery9}
-                    alt="Photo of beautifully
-            arranged food"
+                    alt="Photo of beautifully arranged food"
                   />
                 </figure>
                 <figure class="gallery-item">
                   <img
                     src={gallery10}
-                    alt="Photo of beautifully
-            arranged food"
+                    alt="Photo of beautifully arranged food"
                   />
                 </figure>
                 <figure class="gallery-item">
                   <img
                     src={gallery11}
-                    alt="Photo of beautifully
-            arranged food"
+                    alt="Photo of beautifully arranged food"
                   />
                 </figure>
                 <figure class="gallery-item">
                   <img
                     src={gallery12}
-                    alt="Photo of beautifully
-            arranged food"
+                    alt="Photo of beautifully arranged food"
                   />
                 </figure>
               </div>
@@ -621,7 +634,7 @@ function App() {
                   </ul>
                   <div class="plan-sing-up">
                     <a href="#" class="btn btn--full">
-                      Start eating well
+                      让我们一起健康饮食
                     </a>
                   </div>
                 </div>
@@ -688,7 +701,7 @@ function App() {
                     class="feature-icon"
                     name="infinite-outline"
                   ></ion-icon>
-                  <p class="feature-title">永不再做饭！</p>
+                  <p class="feature-title">永不烦恼配餐！</p>
                   <p class="feature-text">
                     我们的订阅涵盖每年365天，甚至包括主要假期。
                   </p>
@@ -729,7 +742,7 @@ function App() {
                   <div class="cta-text-box">
                     <h2 class="heading-secondary">免费获得服务尝试机会！</h2>
                     <p class="cta-text">
-                      健康、美味且无忧的餐点正在等着您。从今天开始健康饮食。您可以随时取消或暂停。
+                      健康、美味且无忧的配方正在等着您。从今天开始健康饮食。您可以随时取消或暂停。
                     </p>
 
                     <form class="cta-form" name="sign-up" netlify>
@@ -738,7 +751,7 @@ function App() {
                         <input
                           id="full-name"
                           type="text"
-                          placeholder="约翰·史密斯"
+                          placeholder="东方白"
                           name="full-name"
                           required
                         />
@@ -787,7 +800,7 @@ function App() {
                   <img
                     class="logo"
                     alt="智能饮食助手 logo"
-                    src="img/omnifood-logo.png"
+                    src={omnifoodLogo}
                   />
                 </a>
 
