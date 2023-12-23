@@ -4,10 +4,28 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+
+import {   BrowserRouter,
+  Routes,
+  Route } from 'react-router-dom';
+// import Home from './components/Home'; // 你的首页组件
+import FoodRecordForm from './pages/record'; // 另一个页面的组件
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    < BrowserRouter>
+  <Routes>
+  <Route path="/" exact  element={<App />}/>
+    <Route path="/foodRecord"  element={<FoodRecordForm />} />
+  </Routes>
+  </BrowserRouter>
+    
+
+  
+  
+ 
+    
   </React.StrictMode>
 );
 

@@ -36,6 +36,8 @@ import meal2 from './img/meals/meal-2.jpg'
 import './css/general.css'
 import './css/queries.css'
 import './css/style.css'
+
+
 function App() {
   return (
     <div>
