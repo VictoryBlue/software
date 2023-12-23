@@ -14,9 +14,9 @@ import FoodRecordForm from './pages/record'; // 另一个页面的组件
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    < BrowserRouter>
+  < BrowserRouter>
   <Routes>
-  <Route path="/" exact  element={<App />}/>
+    <Route path="/" exact  element={<App />}/>
     <Route path="/foodRecord"  element={<FoodRecordForm />} />
   </Routes>
   </BrowserRouter>
