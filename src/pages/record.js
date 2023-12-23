@@ -28,7 +28,7 @@ const FoodRecordsPage = () => {
 
   const [isModalVisible, setIsModalVisible] = useState(false);
   const [formData, setFormData] = useState({});
-  const { handleModalClose, handleOpenModal, modalVisible, loading } =
+  const { handleModalClose, handleOpenModal, aiResponse, modalVisible, loading } =
     useAnalysisSingle();
 
   const columns = [
@@ -68,7 +68,7 @@ const FoodRecordsPage = () => {
           <Button type="danger" onClick={() => handleDelete(record.key)}>
             删除
           </Button>
-          <Button onClick={handleOpenModal}>打开模态框</Button>
+          <Button onClick={handleOpenModal}>营养建议</Button>
         </span>
       ),
     },
@@ -111,14 +111,14 @@ const FoodRecordsPage = () => {
       </div>
 
       <Modal
-        title="你的模态框标题"
+        title="营养建议"
         open={modalVisible}
         onCancel={handleModalClose}
         footer={null}
       >
         {/* 使用 Spin 组件展示 loading 状态 */}
         <Spin spinning={loading}>
-          111
+        {aiResponse}
         </Spin>
       </Modal>
 
