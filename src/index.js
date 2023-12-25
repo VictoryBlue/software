@@ -10,6 +10,7 @@ import {   BrowserRouter,
   Route } from 'react-router-dom';
 // import Home from './components/Home'; // 你的首页组件
 import FoodRecordForm from './pages/record'; // 另一个页面的组件
+import HealthForm from './pages/info'; // 另一个页面的组件
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -18,6 +19,8 @@ root.render(
   <Routes>
     <Route path="/" exact  element={<App />}/>
     <Route path="/foodRecord"  element={<FoodRecordForm />} />
+    <Route path="/healthInfo"  element={<HealthForm />} />
+    
   </Routes>
   </BrowserRouter>
     
