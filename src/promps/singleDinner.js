@@ -1,0 +1,1 @@
+export const singleDinner = '请评价这份餐饮的健康程度，let think step by step'
