@@ -1,8 +1,8 @@
-import { useState } from 'react';
+import { useCallback, useState } from 'react';
 import OpenAI from "openai";
 
 const openai = new OpenAI({
-  apiKey: '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',
+  apiKey: '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',
   dangerouslyAllowBrowser: true,
 
 });
@@ -11,11 +11,21 @@ export const useAnalysisSingle =  ()=> {
     const [modalVisible, setModalVisible] = useState(false);
     const [loading, setLoading] = useState(false);
     const [aiResponse, setAiResponse] = useState('')
+    const [prompt, setPrompt] = useState('请评价这份餐饮作为午餐的健康程度，let think step by step'+JSON.stringify(  {
+      key: "1",
+      foodName: "鸡丝沙拉",
+      foodAmount: "200g",
+      servings: 1,
+      eatingTime: "2023-01-01 12:30",
+      cookingMethod: "碾磨",
+    },))
+
+   
     const fetchOpenAi  = async ()=>{
       
       setModalVisible(true);
       const chatCompletion = await openai.chat.completions.create({
-        messages: [{ role: 'user', content: 'Say this is a test' }],
+        messages: [{ role: 'user', content: prompt }],
         model: 'gpt-3.5-turbo',
       });
       console.log(chatCompletion, 'chatCompletion')
@@ -43,6 +53,7 @@ export const useAnalysisSingle =  ()=> {
         handleOpenModal,
         modalVisible,
         aiResponse,
-        loading
+        loading,
+        setPrompt
     }
 }

@@ -742,7 +742,7 @@ function App() {
               <div class="container">
                 <div class="cta">
                   <div class="cta-text-box">
-                    <h2 class="heading-secondary">免费获得服务尝试机会！</h2>
+                    <h2 class="heading-secondary">立刻尝试吧！</h2>
                     <p class="cta-text">
                       健康、美味且无忧的配方正在等着您。从今天开始健康饮食。您可以随时取消或暂停。
                     </p>
@@ -781,8 +781,8 @@ function App() {
                           <option value="others">其他</option>
                         </select>
                       </div>
-
-                      <button class="btn btn--form">立即注册</button>
+                      <a href="/healthInfo" style={{textDecoration:'none'}} className="btn btn--form">立即注册</a>
+                      
                     </form>
                   </div>
                   <div

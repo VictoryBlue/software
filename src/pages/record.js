@@ -10,6 +10,9 @@ import {
   Select,
 } from "antd";
 import { useAnalysisSingle } from "./components/useAnalysisSingle";
+import { useEffect } from "react";
+import { individualPrefix } from '../promps/individualOneday'
+import { singleDinner } from '../promps/singleDinner'
 // import { AnalysisSingleModal } from "./components/AnalysisSingleModal";
 const { Option } = Select;
 
@@ -23,14 +26,24 @@ const FoodRecordsPage = () => {
       eatingTime: "2023-01-01 12:30",
       cookingMethod: "碾磨",
     },
-    // Add more food records as needed
+    {
+        key: "2",
+        foodName: "拔丝地瓜",
+        foodAmount: "200g",
+        servings: 1,
+        eatingTime: "2023-01-01 19:30",
+        cookingMethod: "蒸煮",
+      },
+    
   ]);
+
 
   const [isModalVisible, setIsModalVisible] = useState(false);
   const [formData, setFormData] = useState({});
-  const { handleModalClose, handleOpenModal, aiResponse, modalVisible, loading } =
+  const { handleModalClose, handleOpenModal, aiResponse, modalVisible, loading,setPrompt } =
     useAnalysisSingle();
 
+ 
   const columns = [
     {
       title: "食物名称",
@@ -68,7 +81,11 @@ const FoodRecordsPage = () => {
           <Button type="danger" onClick={() => handleDelete(record.key)}>
             删除
           </Button>
-          <Button onClick={handleOpenModal}>营养建议</Button>
+          <Button onClick={()=>{
+            setPrompt(individualPrefix + JSON.stringify(dataSource))
+            handleOpenModal()
+            console.log(dataSource,'datasource')
+          }}>营养建议</Button>
         </span>
       ),
     },
@@ -108,10 +125,16 @@ const FoodRecordsPage = () => {
         <Button type="primary" onClick={() => setIsModalVisible(true)}>
           添加食物记录
         </Button>
+
+        <Button type="primary" onClick={() => handleOpenModal(true)}
+        style={ {marginLeft: "16px"}}
+        >
+          个性化饮食建议
+        </Button>
       </div>
 
       <Modal
-        title="营养建议"
+        title="营养建议｜个性化饮食建议"
         open={modalVisible}
         onCancel={handleModalClose}
         footer={null}
