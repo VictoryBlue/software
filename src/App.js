@@ -445,7 +445,7 @@ function App() {
               </div>
 
               <div class="container all-recipes">
-                <a href="#" class="link">
+                <a href="/recommend" class="link">
                   尝试菜谱推荐 &rarr;
                 </a>
               </div>
@@ -464,7 +464,7 @@ function App() {
                       src={dave}
                     />
                     <blockquote class="testimonial-text">
-                      实惠、健康又美味的餐点，甚至无需手动下单！简直就像魔法一般。
+                      健康又美味的餐点，简直就像魔法一般。
                     </blockquote>
                     <p class="testimonial-name">&mdash; Dave Bryson</p>
                   </figure>
@@ -489,7 +489,7 @@ function App() {
                     />
                     <blockquote class="testimonial-text">
                       智能饮食助手
-                      真是个救星！我刚刚创办了一家公司，所以没时间做饭。现在我离不开每日的餐点了！
+                      真是个救星！我刚刚创办了一家公司，所以搭配午餐。现在我离不开每日的餐点了！
                     </blockquote>
                     <p class="testimonial-name">&mdash; Steve Miller</p>
                   </figure>
@@ -502,7 +502,7 @@ function App() {
                     />
                     <blockquote class="testimonial-text">
                       我为整个家庭选择了
-                      Omnifood，它为我们节省了很多时间！而且，所有食物都是有机的，素食的，没有塑料包装。
+                      foodhelper，它为我们节省了很多时间！而且，所有食物都是有机的，素食的，没有塑料包装。
                     </blockquote>
                     <p class="testimonial-name">&mdash; Hannah Smith</p>
                   </figure>
@@ -850,8 +850,8 @@ function App() {
                       415-201-6370
                     </a>
                     <br />
-                    <a class="footer-link" href="mailto:hello@omnifood.com">
-                      hello@omnifood.com
+                    <a class="footer-link" href="mailto:hello@foodhelper.com">
+                      hello@foodhelper.com
                     </a>
                   </p>
                 </address>

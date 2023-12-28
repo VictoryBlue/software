@@ -1,13 +1,16 @@
 import { Form, Input, Radio, InputNumber, Checkbox, Select, Button } from 'antd';
 import { useNavigate } from 'react-router-dom';
 
+import useInformation from '../hooks/storeInfo';
 const { Option } = Select;
 
 const HealthForm = () => {
     const navigate = useNavigate();
+   const  { userInfo, isLoading, setUserInfo } = useInformation()
   const onFinish = (values) => {
     // 在这里处理收集到的健康信息
-    console.log('Received values:', values);
+    // setUserInfo(values)
+    localStorage.setItem('userInfo', JSON.stringify(values));
     navigate('/foodRecord')
   };
 

@@ -11,15 +11,17 @@ import {   BrowserRouter,
 // import Home from './components/Home'; // 你的首页组件
 import FoodRecordForm from './pages/record'; // 另一个页面的组件
 import HealthForm from './pages/info'; // 另一个页面的组件
+import Recommend from './pages/recommend'; // 另一个页面的组件
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  
   < BrowserRouter>
   <Routes>
     <Route path="/" exact  element={<App />}/>
     <Route path="/foodRecord"  element={<FoodRecordForm />} />
     <Route path="/healthInfo"  element={<HealthForm />} />
+    <Route path="/recommend"  element={<Recommend />} />
     
   </Routes>
   </BrowserRouter>
@@ -29,7 +31,7 @@ root.render(
   
  
     
-  </React.StrictMode>
+  
 );
 
 // If you want to start measuring performance in your app, pass a function
