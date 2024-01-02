@@ -12,6 +12,7 @@ import {   BrowserRouter,
 import FoodRecordForm from './pages/record'; // 另一个页面的组件
 import HealthForm from './pages/info'; // 另一个页面的组件
 import Recommend from './pages/recommend'; // 另一个页面的组件
+import Login from './pages/login';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -19,6 +20,7 @@ root.render(
   < BrowserRouter>
   <Routes>
     <Route path="/" exact  element={<App />}/>
+    <Route path="/login"  element={<Login />} />
     <Route path="/foodRecord"  element={<FoodRecordForm />} />
     <Route path="/healthInfo"  element={<HealthForm />} />
     <Route path="/recommend"  element={<Recommend />} />
