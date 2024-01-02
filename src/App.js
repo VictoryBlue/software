@@ -1,42 +1,41 @@
-import custom1 from "./img/customers/customer-1.jpg"
-import custom2 from "./img/customers/customer-2.jpg"
-import custom3 from "./img/customers/customer-3.jpg"
-import custom4 from "./img/customers/customer-4.jpg"
-import custom5 from "./img/customers/customer-5.jpg"
-import custom6 from "./img/customers/customer-6.jpg"
-import gallery1 from './img/gallery/gallery-1.jpg'
-import gallery2 from './img/gallery/gallery-2.jpg'
-import gallery3 from './img/gallery/gallery-3.jpg'
-import gallery4 from './img/gallery/gallery-4.jpg'
-import gallery5 from './img/gallery/gallery-5.jpg'
-import gallery6 from './img/gallery/gallery-6.jpg'
-import gallery7 from './img/gallery/gallery-7.jpg'
-import gallery8 from './img/gallery/gallery-8.jpg'
-import gallery9 from './img/gallery/gallery-9.jpg'
-import gallery10 from './img/gallery/gallery-10.jpg'
-import gallery11 from './img/gallery/gallery-11.jpg'
-import gallery12 from './img/gallery/gallery-12.jpg'
-import dave from './img/customers/dave.jpg'
-import ben from './img/customers/ben.jpg'
-import steve from './img/customers/steve.jpg'
-import hannah from './img/customers/hannah.jpg'
-import omnifoodLogo from './img/omnifood-logo.png'
-import techcrunch from './img/logos/techcrunch.png'
-import businessInsider from './img/logos/business-insider.png'
-import nyT from './img/logos/the-new-york-times.png'
-import forbes from './img/logos/forbes.png'
-import usaToday from './img/logos/usa-today.png'
-import heroMin from './img/hero-min.png'
-import hero from './img/hero.webp'
-import screen1 from './img/app/app-screen-1.png'
-import screen2 from './img/app/app-screen-2.png'
-import screen3 from './img/app/app-screen-3.png'
-import meal1 from './img/meals/meal-1.jpg'
-import meal2 from './img/meals/meal-2.jpg'
-import './css/general.css'
-import './css/queries.css'
-import './css/style.css'
-
+import custom1 from './img/customers/customer-1.jpg';
+import custom2 from './img/customers/customer-2.jpg';
+import custom3 from './img/customers/customer-3.jpg';
+import custom4 from './img/customers/customer-4.jpg';
+import custom5 from './img/customers/customer-5.jpg';
+import custom6 from './img/customers/customer-6.jpg';
+import gallery1 from './img/gallery/gallery-1.jpg';
+import gallery2 from './img/gallery/gallery-2.jpg';
+import gallery3 from './img/gallery/gallery-3.jpg';
+import gallery4 from './img/gallery/gallery-4.jpg';
+import gallery5 from './img/gallery/gallery-5.jpg';
+import gallery6 from './img/gallery/gallery-6.jpg';
+import gallery7 from './img/gallery/gallery-7.jpg';
+import gallery8 from './img/gallery/gallery-8.jpg';
+import gallery9 from './img/gallery/gallery-9.jpg';
+import gallery10 from './img/gallery/gallery-10.jpg';
+import gallery11 from './img/gallery/gallery-11.jpg';
+import gallery12 from './img/gallery/gallery-12.jpg';
+import dave from './img/customers/dave.jpg';
+import ben from './img/customers/ben.jpg';
+import steve from './img/customers/steve.jpg';
+import hannah from './img/customers/hannah.jpg';
+import omnifoodLogo from './img/omnifood-logo.png';
+import techcrunch from './img/logos/techcrunch.png';
+import businessInsider from './img/logos/business-insider.png';
+import nyT from './img/logos/the-new-york-times.png';
+import forbes from './img/logos/forbes.png';
+import usaToday from './img/logos/usa-today.png';
+import heroMin from './img/hero-min.png';
+import hero from './img/hero.webp';
+import screen1 from './img/app/app-screen-1.png';
+import screen2 from './img/app/app-screen-2.png';
+import screen3 from './img/app/app-screen-3.png';
+import meal1 from './img/meals/meal-1.jpg';
+import meal2 from './img/meals/meal-2.jpg';
+import './css/general.css';
+import './css/queries.css';
+import './css/style.css';
 
 function App() {
   return (
@@ -44,7 +43,10 @@ function App() {
       <div className="App">
         <head>
           <meta charset="UTF-8" />
-          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta
+            http-equiv="X-UA-Compatible"
+            content="IE=edge"
+          />
           <meta
             name="description"
             content="智能饮食助手 is an AI-powered food subscription that will make you eat healthy again, 365 days per year. It's tailored to your personal tastes and nutritional needs."
@@ -55,18 +57,39 @@ function App() {
             content="width=device-width, initial-scale=1.0"
           />
 
-          <link rel="icon" href="img/favicon.png" />
-          <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
-          <link rel="manifest" href="manifest.webmanifest" />
-          <link rel="preconnect" href="https://fonts.gstatic.com" />
+          <link
+            rel="icon"
+            href="img/favicon.png"
+          />
+          <link
+            rel="apple-touch-icon"
+            href="img/apple-touch-icon.png"
+          />
+          <link
+            rel="manifest"
+            href="manifest.webmanifest"
+          />
+          <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+          />
           <link
             href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
             rel="stylesheet"
           />
 
-          <link rel="stylesheet" href="css/general.css" />
-          <link rel="stylesheet" href="css/style.css" />
-          <link rel="stylesheet" href="css/queries.css" />
+          <link
+            rel="stylesheet"
+            href="css/general.css"
+          />
+          <link
+            rel="stylesheet"
+            href="css/style.css"
+          />
+          <link
+            rel="stylesheet"
+            href="css/queries.css"
+          />
 
           <script
             type="module"
@@ -81,7 +104,10 @@ function App() {
             defer
             src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
           ></script>
-          <script defer src="js/script.js"></script>
+          <script
+            defer
+            src="js/script.js"
+          ></script>
 
           <title>智能饮食助手 &mdash; Never cook again!</title>
         </head>
@@ -98,27 +124,42 @@ function App() {
             <nav class="main-nav">
               <ul class="main-nav-list">
                 <li>
-                  <a class="main-nav-link" href="#how">
+                  <a
+                    class="main-nav-link"
+                    href="#how"
+                  >
                     它是如何让您更健康的
                   </a>
                 </li>
                 <li>
-                  <a class="main-nav-link" href="#meals">
+                  <a
+                    class="main-nav-link"
+                    href="#meals"
+                  >
                     健康饮食
                   </a>
                 </li>
                 <li>
-                  <a class="main-nav-link" href="#testimonials">
+                  <a
+                    class="main-nav-link"
+                    href="#testimonials"
+                  >
                     用户故事
                   </a>
                 </li>
                 <li>
-                  <a class="main-nav-link" href="#pricing">
+                  <a
+                    class="main-nav-link"
+                    href="#pricing"
+                  >
                     定价
                   </a>
                 </li>
                 <li>
-                  <a class="main-nav-link nav-cta" href="#cta">
+                  <a
+                    class="main-nav-link nav-cta"
+                    href="#cta"
+                  >
                     免费尝试
                   </a>
                 </li>
@@ -126,8 +167,14 @@ function App() {
             </nav>
 
             <button class="btn-mobile-nav">
-              <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
-              <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+              <ion-icon
+                class="icon-mobile-nav"
+                name="menu-outline"
+              ></ion-icon>
+              <ion-icon
+                class="icon-mobile-nav"
+                name="close-outline"
+              ></ion-icon>
             </button>
           </header>
 
@@ -140,11 +187,17 @@ function App() {
                     根据您的个人口味和营养需求量身定制，一年 365
                     天的智能食品参考，将使您重新开始健康饮食。
                   </p>
-                  <a href="#cta" class="btn btn--full margin-right-sm">
+                  <a
+                    href="#cta"
+                    class="btn btn--full margin-right-sm"
+                  >
                     开始健康生活
                   </a>
 
-                  <a href="#how" class="btn btn--outline">
+                  <a
+                    href="#how"
+                    class="btn btn--outline"
+                  >
                     了解我们 &darr;
                   </a>
                   <div class="delivered-meals">
@@ -174,15 +227,19 @@ function App() {
                         alt="Customer photo"
                       />
                     </div>
-                    <p class="delivered-text">
-                      {/* <span>250,000+</span> */}
-                    </p>
+                    <p class="delivered-text">{/* <span>250,000+</span> */}</p>
                   </div>
                 </div>
                 <div class="hero-img-box">
                   <picture>
-                    <source srcset={hero} type="image/webp" />
-                    <source srcset={heroMin} type="image/png" />
+                    <source
+                      srcset={hero}
+                      type="image/webp"
+                    />
+                    <source
+                      srcset={heroMin}
+                      type="image/png"
+                    />
 
                     <img
                       src={heroMin}
@@ -198,9 +255,10 @@ function App() {
               <div class="container">
                 <h2 class="heading-featured-in">As featured in</h2>
                 <div class="logos">
-                  <img 
+                  <img
                     src={techcrunch}
-                    alt="Techcrunch logo" />
+                    alt="Techcrunch logo"
+                  />
                   <img
                     src={businessInsider}
                     alt="Business Insider logo"
@@ -209,11 +267,11 @@ function App() {
                     src={nyT}
                     alt="The New York Times logo"
                   />
-                  <img 
+                  <img
                     src={forbes}
                     alt="Forbes logo"
                   />
-                  <img 
+                  <img
                     src={usaToday}
                     alt="USA Today logo"
                   />
@@ -221,7 +279,10 @@ function App() {
               </div>
             </section>
 
-            <section class="section-how" id="how">
+            <section
+              class="section-how"
+              id="how"
+            >
               <div class="container">
                 <span class="subheading">它是如何让您更健康的</span>
                 <h2 class="heading-secondary">每日健康饮食只需三步！</h2>
@@ -266,7 +327,7 @@ function App() {
                   <p class="step-number">03</p>
                   <h3 class="heading-tertiary">强大的饮食追踪</h3>
                   <p class="step-description">
-                  我们不仅仅会记录你的每一餐，更会自动为你呈现总热量和各种丰富的营养成分。蛋白质、碳水化合物、脂肪、维生素、矿物质，一应俱全。这不仅是记录，更是关于你身体每一寸的活力！
+                    我们不仅仅会记录你的每一餐，更会自动为你呈现总热量和各种丰富的营养成分。蛋白质、碳水化合物、脂肪、维生素、矿物质，一应俱全。这不仅是记录，更是关于你身体每一寸的活力！
                   </p>
                 </div>
                 <div class="step-img-box">
@@ -280,7 +341,10 @@ function App() {
               </div>
             </section>
 
-            <section class="section-meals" id="meals">
+            <section
+              class="section-meals"
+              id="meals"
+            >
               <div class="container center-text">
                 <span class="subheading">Meals</span>
                 <h2 class="heading-secondary">大模型为您选择多样化的食谱</h2>
@@ -445,13 +509,19 @@ function App() {
               </div>
 
               <div class="container all-recipes">
-                <a href="/recommend" class="link">
+                <a
+                  href="/recommend"
+                  class="link"
+                >
                   尝试菜谱推荐 &rarr;
                 </a>
               </div>
             </section>
 
-            <section class="section-testimonials" id="testimonials">
+            <section
+              class="section-testimonials"
+              id="testimonials"
+            >
               <div class="testimonials-container">
                 <span class="subheading">用户故事</span>
                 <h2 class="heading-secondary">一旦尝试，回味无穷</h2>
@@ -585,7 +655,10 @@ function App() {
               </div>
             </section>
 
-            <section class="section-pricing" id="pricing">
+            <section
+              class="section-pricing"
+              id="pricing"
+            >
               <div class="container">
                 <span class="subheading">Pricing</span>
                 <h2 class="heading-secondary">
@@ -635,7 +708,10 @@ function App() {
                     </li>
                   </ul>
                   <div class="plan-sing-up">
-                    <a href="#" class="btn btn--full">
+                    <a
+                      href="#"
+                      class="btn btn--full"
+                    >
                       让我们一起健康饮食
                     </a>
                   </div>
@@ -684,7 +760,10 @@ function App() {
                     </li>
                   </ul>
                   <div class="plan-sing-up">
-                    <a href="#" class="btn btn--full">
+                    <a
+                      href="#"
+                      class="btn btn--full"
+                    >
                       让我们一起健康饮食
                     </a>
                   </div>
@@ -719,7 +798,10 @@ function App() {
                   </p>
                 </div>
                 <div class="feature">
-                  <ion-icon class="feature-icon" name="leaf-outline"></ion-icon>
+                  <ion-icon
+                    class="feature-icon"
+                    name="leaf-outline"
+                  ></ion-icon>
                   <p class="feature-title">零浪费</p>
                   <p class="feature-text">
                     所有我们的合作伙伴只使用可重复使用的容器包装所有您的餐点。
@@ -738,7 +820,10 @@ function App() {
               </div>
             </section>
 
-            <section class="section-cta" id="cta">
+            <section
+              class="section-cta"
+              id="cta"
+            >
               <div class="container">
                 <div class="cta">
                   <div class="cta-text-box">
@@ -747,7 +832,11 @@ function App() {
                       健康、美味且无忧的配方正在等着您。从今天开始健康饮食。您可以随时取消或暂停。
                     </p>
 
-                    <form class="cta-form" name="sign-up" netlify>
+                    <form
+                      class="cta-form"
+                      name="sign-up"
+                      netlify
+                    >
                       <div>
                         <label for="full-name">全名</label>
                         <input
@@ -772,7 +861,11 @@ function App() {
 
                       <div>
                         <label for="select-where">您从哪里得知我们？</label>
-                        <select id="select-where" name="select-where" required>
+                        <select
+                          id="select-where"
+                          name="select-where"
+                          required
+                        >
                           <option value="">请选择一个选项：</option>
                           <option value="friends">朋友和家人</option>
                           <option value="youtube">B站视频</option>
@@ -781,8 +874,13 @@ function App() {
                           <option value="others">其他</option>
                         </select>
                       </div>
-                      <a href="/healthInfo" style={{textDecoration:'none'}} className="btn btn--form">立即注册</a>
-                      
+                      <a
+                        href="/healthInfo"
+                        style={{ textDecoration: 'none' }}
+                        className="btn btn--form"
+                      >
+                        立即注册
+                      </a>
                     </form>
                   </div>
                   <div
@@ -798,7 +896,10 @@ function App() {
           <footer class="footer">
             <div class="container grid grid--footer">
               <div class="logo-col">
-                <a href="#" class="footer-logo">
+                <a
+                  href="#"
+                  class="footer-logo"
+                >
                   <img
                     class="logo"
                     alt="智能饮食助手 logo"
@@ -808,7 +909,10 @@ function App() {
 
                 <ul class="social-links">
                   <li>
-                    <a class="footer-link" href="#">
+                    <a
+                      class="footer-link"
+                      href="#"
+                    >
                       <ion-icon
                         class="social-icon"
                         name="logo-instagram"
@@ -816,7 +920,10 @@ function App() {
                     </a>
                   </li>
                   <li>
-                    <a class="footer-link" href="#">
+                    <a
+                      class="footer-link"
+                      href="#"
+                    >
                       <ion-icon
                         class="social-icon"
                         name="logo-facebook"
@@ -824,7 +931,10 @@ function App() {
                     </a>
                   </li>
                   <li>
-                    <a class="footer-link" href="#">
+                    <a
+                      class="footer-link"
+                      href="#"
+                    >
                       <ion-icon
                         class="social-icon"
                         name="logo-twitter"
@@ -846,11 +956,17 @@ function App() {
                     623 Harrison St., 2nd Floor, San Francisco, CA 94107
                   </p>
                   <p>
-                    <a class="footer-link" href="tel:415-201-6370">
+                    <a
+                      class="footer-link"
+                      href="tel:415-201-6370"
+                    >
                       415-201-6370
                     </a>
                     <br />
-                    <a class="footer-link" href="mailto:hello@foodhelper.com">
+                    <a
+                      class="footer-link"
+                      href="mailto:hello@foodhelper.com"
+                    >
                       hello@foodhelper.com
                     </a>
                   </p>
@@ -861,22 +977,34 @@ function App() {
                 <p class="footer-heading">账户</p>
                 <ul class="footer-nav">
                   <li>
-                    <a class="footer-link" href="#">
+                    <a
+                      class="footer-link"
+                      href="#"
+                    >
                       创建账户
                     </a>
                   </li>
                   <li>
-                    <a class="footer-link" href="#">
+                    <a
+                      class="footer-link"
+                      href="#"
+                    >
                       登录
                     </a>
                   </li>
                   <li>
-                    <a class="footer-link" href="#">
+                    <a
+                      class="footer-link"
+                      href="#"
+                    >
                       iOS 应用
                     </a>
                   </li>
                   <li>
-                    <a class="footer-link" href="#">
+                    <a
+                      class="footer-link"
+                      href="#"
+                    >
                       Android 应用
                     </a>
                   </li>
@@ -887,22 +1015,34 @@ function App() {
                 <p class="footer-heading">公司</p>
                 <ul class="footer-nav">
                   <li>
-                    <a class="footer-link" href="#">
+                    <a
+                      class="footer-link"
+                      href="#"
+                    >
                       关于 智能饮食助手
                     </a>
                   </li>
                   <li>
-                    <a class="footer-link" href="#">
+                    <a
+                      class="footer-link"
+                      href="#"
+                    >
                       商业合作
                     </a>
                   </li>
                   <li>
-                    <a class="footer-link" href="#">
+                    <a
+                      class="footer-link"
+                      href="#"
+                    >
                       烹饪合作伙伴
                     </a>
                   </li>
                   <li>
-                    <a class="footer-link" href="#">
+                    <a
+                      class="footer-link"
+                      href="#"
+                    >
                       职业机会
                     </a>
                   </li>
@@ -913,17 +1053,26 @@ function App() {
                 <p class="footer-heading">资源</p>
                 <ul class="footer-nav">
                   <li>
-                    <a class="footer-link" href="#">
+                    <a
+                      class="footer-link"
+                      href="#"
+                    >
                       食谱目录
                     </a>
                   </li>
                   <li>
-                    <a class="footer-link" href="#">
+                    <a
+                      class="footer-link"
+                      href="#"
+                    >
                       帮助中心
                     </a>
                   </li>
                   <li>
-                    <a class="footer-link" href="#">
+                    <a
+                      class="footer-link"
+                      href="#"
+                    >
                       隐私与条款
                     </a>
                   </li>
